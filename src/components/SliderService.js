@@ -8,6 +8,7 @@ const SliderService = ({ initialChecked, passChecked }) => {
     video: { checked: false, value: "Video Campaign" },
     ground: { checked: false, value: "On-ground Engagements" },
     post: { checked: false, value: "Post Production" },
+    production: { checked: false, value: "Production" },
   };
 
   const [isChecked, setChecked] = useState(initialChecked);
@@ -22,7 +23,9 @@ const SliderService = ({ initialChecked, passChecked }) => {
 
   const handleClick = (e, each) => {
     const val = checkedboxes[each].value;
-    e.target.checked ? initialChecked.push(val) : removeItemOnce(initialChecked, val);
+    e.target.checked
+      ? initialChecked.push(val)
+      : removeItemOnce(initialChecked, val);
     setChecked(initialChecked);
   };
 
