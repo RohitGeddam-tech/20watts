@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/20watts/static/css/main.497f62d0.chunk.css",
-    "main.js": "/20watts/static/js/main.84552d40.chunk.js",
-    "main.js.map": "/20watts/static/js/main.84552d40.chunk.js.map",
+    "main.css": "/20watts/static/css/main.2a73a795.chunk.css",
+    "main.js": "/20watts/static/js/main.3abe0f81.chunk.js",
+    "main.js.map": "/20watts/static/js/main.3abe0f81.chunk.js.map",
     "runtime-main.js": "/20watts/static/js/runtime-main.4ba545c4.js",
     "runtime-main.js.map": "/20watts/static/js/runtime-main.4ba545c4.js.map",
-    "static/css/2.6bd17a26.chunk.css": "/20watts/static/css/2.6bd17a26.chunk.css",
-    "static/js/2.ed9db149.chunk.js": "/20watts/static/js/2.ed9db149.chunk.js",
-    "static/js/2.ed9db149.chunk.js.map": "/20watts/static/js/2.ed9db149.chunk.js.map",
+    "static/css/2.7fc9bc2b.chunk.css": "/20watts/static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.ecfa687b.chunk.js": "/20watts/static/js/2.ecfa687b.chunk.js",
+    "static/js/2.ecfa687b.chunk.js.map": "/20watts/static/js/2.ecfa687b.chunk.js.map",
     "index.html": "/20watts/index.html",
-    "static/css/2.6bd17a26.chunk.css.map": "/20watts/static/css/2.6bd17a26.chunk.css.map",
-    "static/css/main.497f62d0.chunk.css.map": "/20watts/static/css/main.497f62d0.chunk.css.map",
-    "static/js/2.ed9db149.chunk.js.LICENSE.txt": "/20watts/static/js/2.ed9db149.chunk.js.LICENSE.txt",
+    "static/css/2.7fc9bc2b.chunk.css.map": "/20watts/static/css/2.7fc9bc2b.chunk.css.map",
+    "static/css/main.2a73a795.chunk.css.map": "/20watts/static/css/main.2a73a795.chunk.css.map",
+    "static/js/2.ecfa687b.chunk.js.LICENSE.txt": "/20watts/static/js/2.ecfa687b.chunk.js.LICENSE.txt",
     "static/media/Anny.365cce24.png": "/20watts/static/media/Anny.365cce24.png",
     "static/media/Christopher.cb44875a.png": "/20watts/static/media/Christopher.cb44875a.png",
     "static/media/Frame2.6756bbc8.png": "/20watts/static/media/Frame2.6756bbc8.png",
@@ -43,16 +43,15 @@
     "static/media/prod.7aa84e91.png": "/20watts/static/media/prod.7aa84e91.png",
     "static/media/saloni.83a48d2f.png": "/20watts/static/media/saloni.83a48d2f.png",
     "static/media/savio.9d62c1b2.png": "/20watts/static/media/savio.9d62c1b2.png",
-    "static/media/slick-theme.css": "/20watts/static/media/slick.c94f7671.ttf",
     "static/media/soc.7fa8972b.png": "/20watts/static/media/soc.7fa8972b.png",
     "static/media/star-world.79950a48.png": "/20watts/static/media/star-world.79950a48.png",
     "static/media/strat.4d2e4274.png": "/20watts/static/media/strat.4d2e4274.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4ba545c4.js",
-    "static/css/2.6bd17a26.chunk.css",
-    "static/js/2.ed9db149.chunk.js",
-    "static/css/main.497f62d0.chunk.css",
-    "static/js/main.84552d40.chunk.js"
+    "static/css/2.7fc9bc2b.chunk.css",
+    "static/js/2.ecfa687b.chunk.js",
+    "static/css/main.2a73a795.chunk.css",
+    "static/js/main.3abe0f81.chunk.js"
   ]
 }
