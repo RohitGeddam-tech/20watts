@@ -1,13 +1,14 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import "./css/about.css";
-import Slider from "../components/Sliding";
+// import Slider from "../components/Sliding";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import desk from "../img/Frame2.png";
 import mob from "../img/Framemob.jpg";
 import { Fade } from "react-animation-components";
-import MobSlider from "../components/MobSliding";
+// import MobSlider from "../components/MobSliding";
 import { NavHashLink } from "react-router-hash-link";
+import Trial from "../components/Trial";
 
 const Desktop = () => {
   const [active, setActive] = useState(false);
@@ -38,6 +39,8 @@ const Desktop = () => {
   }, [scrollHandler]);
 
   const sliderFil = inView ? "slider" : "sliderfill";
+
+  // const trialFil = inView ? "trialSlide" : "trialFill";
 
   const imag = active ? "frame" : "imag";
 
@@ -77,7 +80,8 @@ const Desktop = () => {
       </div>
       <div className="sliderbox">
         <div className={sliderFil} data-aos="fade-up" data-aos-duration="1000">
-          <Slider />
+          {/* <Slider /> */}
+          <Trial />
         </div>
         <div className="slidercover" data-aos="fade-up" data-aos-duration="1000">
           <div className="slidecontainer">
@@ -161,7 +165,7 @@ const Tab = () => {
           {active ? <iframe allowFullScreen frameBorder="0" width="100%" height="300px" src={url} title="vid" className="vid" /> : <></>}
         </Fade>
         <div className={container} data-aos="fade-up" data-aos-duration="1000">
-          <MobSlider />
+          <Trial />
         </div>
         <div className="alignbtn">
           <NavHashLink to="/about#mid">
@@ -187,7 +191,7 @@ const Mobile = () => {
 
   const isInView = () => {
     const rect = window.pageYOffset;
-    return rect >= 150 && rect <= 1300;
+    return rect >= 250 && rect <= 1300;
   };
 
   const [inView, setInView] = useState(false);
@@ -248,7 +252,7 @@ const Mobile = () => {
           {active ? <iframe allowFullScreen frameBorder="0" width="100%" height="300px" src={url} title="vid" className="vid" /> : <></>}
         </Fade>
         <div className={container} data-aos="fade-up" data-aos-duration="1000">
-          <MobSlider />
+          <Trial />
         </div>
         <div className="alignbtn">
           <NavHashLink to="/about#mid">
