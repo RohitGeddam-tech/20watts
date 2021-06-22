@@ -9,7 +9,7 @@ import fan from "../img/clients/fankind.png";
 import history from "../img/clients/history.png";
 import mic from "../img/clients/microsoft.png";
 import nush from "../img/clients/nush.png";
-import prime from "../img/clients/prime-video.png";
+import prime from "../img/clients/prime-videoX2.png";
 import raymond from "../img/clients/raymond.png";
 import star from "../img/clients/star-world.png";
 import viu from "../img/clients/viu.png";
