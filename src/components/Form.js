@@ -3,7 +3,7 @@ import TextField from "@material-ui/core/TextField";
 import axios from "axios";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import SliderService from "./SliderService";
-import Serv from './ServiceSlider'
+import Serv from "./ServiceSlider";
 
 const FormDesk = () => {
   const [isChecked, setChecked] = useState([]);
@@ -13,12 +13,15 @@ const FormDesk = () => {
   const [name, setName] = useState("");
   const [phoneNo, setPhoneNo] = useState("");
   const [emailID, setEmailID] = useState("");
+  // const [service, setService] = useState("");
+  // const [serviceInvalid, setServiceInvalid] = useState(false);
   const [nameInvalid, setNameInvalid] = useState(false);
   const [phoneNoInvalid, setPhoneNoInvalid] = useState(false);
   const [emailIdInvalid, setEmailIdIInvalid] = useState(false);
   const [success, setSuccess] = useState(false);
 
   const handleChange = (e) => {
+    // console.log(e.target.validity);
     switch (e.target.name) {
       case "name":
         setName(e.target.value);
@@ -32,6 +35,10 @@ const FormDesk = () => {
         setEmailID(e.target.value);
         setEmailIdIInvalid(!e.target.validity.valid);
         break;
+      // case "service":
+      //   setService(e.target.value);
+      //   setServiceInvalid(!e.target.validity.valid);
+      //   break;
       default:
         break;
     }
@@ -46,6 +53,8 @@ const FormDesk = () => {
       setFormEmpty(false);
     }
 
+    // if (!(nameInvalid || phoneNoInvalid || emailIdInvalid || serviceInvalid || service === ''))
+
     if (!(nameInvalid || phoneNoInvalid || emailIdInvalid)) {
       setValidity(true);
       setForm({
@@ -53,6 +62,7 @@ const FormDesk = () => {
         phoneNo: phoneNo,
         emailID: emailID,
         services: isChecked.join(", "),
+        // services: service,
       });
     } else {
       setValidity(false);
@@ -71,13 +81,24 @@ const FormDesk = () => {
           console.log(err);
         });
     }
-    console.log(form)
+    console.log(form);
   }, [form, validity]);
 
   return (
     <>
       <form onSubmit={handleSubmit}>
-        <Serv initialChecked={isChecked} passChecked={setChecked} />
+        {/* <Serv initialChecked={isChecked} passChecked={setChecked} /> */}
+        <SliderService initialChecked={isChecked} passChecked={setChecked} />
+        {/* <select
+          name="service"
+          onChange={handleChange}
+          // onChange={e=>console.log(e.target.value)}
+        >
+          <option value="red">red</option>
+          <option value="green">green</option>
+          <option value="yellow">yellow</option>
+        </select>
+        {serviceInvalid ? <h1>Please provide a valid name</h1> : ""} */}
         <TextField
           className="textfield"
           label="Name"

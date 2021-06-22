@@ -33,13 +33,23 @@ const SliderService = ({ initialChecked, passChecked }) => {
     passChecked(isChecked);
   }, [isChecked, passChecked]);
 
+  const [clicked, setClicked] = useState(false);
+
+  const slide = clicked ? "borderslide" : "noneslide";
+
   return (
     <>
       <div className="inputslider">
-        <div className="inputslide">
+        <h1 onClick={() => setClicked(!clicked)}>select your service *</h1>
+        <div className={slide}>
           {Object.keys(checkedboxes).map((each, index) => {
             return (
-              <div className="insideslide" key={index}>
+              <div
+                className="inputslide"
+                // htmlFor={each}
+                // onClick={(e) => e.target.classList.toggle("after")}
+                key={index}
+              >
                 <label
                   htmlFor={each}
                   className="serviceslide-btn"

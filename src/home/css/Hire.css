@@ -542,28 +542,88 @@ label + .MuiInput-formControl {
 
 .inputslider {
   display: flex;
-  width: 100%;
-  align-items: flex-end;
+  width: 75%;
+  flex-flow: column;
+  align-items: flex-start;
+  margin-top: 15px;
 }
+
+.inputslider h1 {
+  width: 100%;
+  border-bottom: 1px solid #000;
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: black;
+}
+
+.inputslider img:last-child {
+  margin-left: 10px;
+}
+/* 
+.inputslider {
+  overflow-x: hidden;
+} */
+
+/* .inputslide label{
+  width: 250px;
+} */
 
 .inputslide {
   width: 100%;
-  overflow-x: scroll;
-  display: flex;
+  /* overflow-x: scroll; */
+  /* display: none; */
+  display: block;
   padding: 3px;
+  margin: 10px 0;
+  text-align: center;
+  border: 1px solid #202020;
   white-space: nowrap;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  /* -ms-overflow-style: none; */
+  /* scrollbar-width: none; */
 }
 
+.inputslide:first-child{
+  margin-top: -1px !important;
+}
+
+.inputslide.after{
+  background-color: #202020;
+}
+
+.inputslide:last-child{
+  margin-bottom: -1px !important;
+}
+
+.borderslide {
+  width: 100%;
+  display: block;
+  border: 1px solid #202020;
+}
+
+.noneslide {
+  display: none;
+  padding: 0 !important;
+}
+
+.inputslide.after{
+  background-color: #202020 !important;
+  color: white;
+}
+
+/* 
 .inputslide::-webkit-scrollbar {
   display: none;
-}
+} */
 
 .insideslide {
-  display: flex !important;
+  display: block !important;
   justify-content: center !important;
   width: 100%;
+  margin: 25px 0;
   outline: none !important;
 }
 
@@ -584,7 +644,7 @@ a {
 /**/
 
 /* slider btns*/
-
+/* 
 .serviceslider-btn {
   background-color: transparent !important;
   padding-top: 5px !important;
@@ -604,40 +664,25 @@ a {
   margin-bottom: 3px !important;
   margin-top: 0;
   border: 1px solid #202020 !important;
-}
+} */
 
 .serviceslide-btn {
   background-color: transparent !important;
   padding-top: 5px !important;
   padding-bottom: 5px !important;
-  padding: 10px;
-  margin: 10px;
-  outline: none !important;
-  border-radius: 50px;
-  white-space: nowrap;
+  white-space: nowrap; 
   cursor: pointer;
   font-family: "Cabin", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   color: #202020;
   text-transform: uppercase;
-  margin-bottom: 3px !important;
-  margin-top: 0;
-  border: 1px solid #202020 !important;
-  margin-left: 0 !important;
 }
 
 .serviceslide-btn.after {
-  margin-left: 0 !important;
   background-color: black !important;
-  padding-top: 5px !important;
-  padding-bottom: 5px !important;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 50px;
   white-space: nowrap;
   cursor: pointer;
   font-family: "Cabin", sans-serif;
@@ -645,14 +690,10 @@ a {
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 3px !important;
-  margin-top: 0;
-  border: 1px solid #20202025 !important;
 }
-
+/* 
 .serviceslider-btn.after {
   background-color: black !important;
   padding-top: 5px !important;
@@ -673,15 +714,7 @@ a {
   margin-top: 0;
   outline: none !important;
   border: 1px solid #202020 !important;
-}
-
-.inputslider img:last-child {
-  margin-left: 10px;
-}
-
-.inputslider {
-  overflow-x: hidden;
-}
+} */
 
 .slick-prev,
 .slick-next {
