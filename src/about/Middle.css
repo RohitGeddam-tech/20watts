@@ -219,6 +219,7 @@
   color: #f7008c;
   text-align: start;
   text-transform: capitalize;
+  margin-bottom: 0;
 }
 
 .flexpara {
@@ -305,6 +306,12 @@
   object-fit: cover;
 }
 
+@media(max-width:780px){
+  .mobnewfirst img{
+    object-fit: fill;
+  }
+}
+
 .mobfirst h4 {
   width: 9%;
   font-family: "Work Sans", sans-serif;
@@ -352,6 +359,19 @@
   font-size: 28px;
   line-height: 32px;
   color: #f7008c;
+}
+
+.mobmid-container h3 {
+  width: 93%;
+  margin: auto;
+  margin-top: 10px;
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 32px;
+  color: #f7008c;
+  padding-bottom: 0;
 }
 
 /*Mobile Ends*/

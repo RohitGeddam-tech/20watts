@@ -245,9 +245,9 @@ const MidMob = () => {
           </div>
         </div>
         <div className="mobmid-container">
-          <h4 data-aos="fade-up" data-aos-duration="1000">
+          <h3 data-aos="fade-up" data-aos-duration="1000">
             Production team
-          </h4>
+          </h3>
           <div className="mobnewfirst">
             <img
               src={post}

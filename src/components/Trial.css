@@ -2,10 +2,11 @@
     /* height: 250px; */
     margin: auto;
     position: relative;
-    width: 90%;
+    width: 100%;
     display: grid;
     place-items: center;
     overflow: hidden;
+    margin-top: 10px !important;
 }
 
 .sliderTrack{
