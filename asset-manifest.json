@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/20watts/static/css/main.ba526a7b.chunk.css",
-    "main.js": "/20watts/static/js/main.2cc20352.chunk.js",
-    "main.js.map": "/20watts/static/js/main.2cc20352.chunk.js.map",
+    "main.css": "/20watts/static/css/main.d55e5ba2.chunk.css",
+    "main.js": "/20watts/static/js/main.a5f9f383.chunk.js",
+    "main.js.map": "/20watts/static/js/main.a5f9f383.chunk.js.map",
     "runtime-main.js": "/20watts/static/js/runtime-main.4ba545c4.js",
     "runtime-main.js.map": "/20watts/static/js/runtime-main.4ba545c4.js.map",
     "static/css/2.6bd17a26.chunk.css": "/20watts/static/css/2.6bd17a26.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.2842a6e8.chunk.js.map": "/20watts/static/js/2.2842a6e8.chunk.js.map",
     "index.html": "/20watts/index.html",
     "static/css/2.6bd17a26.chunk.css.map": "/20watts/static/css/2.6bd17a26.chunk.css.map",
-    "static/css/main.ba526a7b.chunk.css.map": "/20watts/static/css/main.ba526a7b.chunk.css.map",
+    "static/css/main.d55e5ba2.chunk.css.map": "/20watts/static/css/main.d55e5ba2.chunk.css.map",
     "static/js/2.2842a6e8.chunk.js.LICENSE.txt": "/20watts/static/js/2.2842a6e8.chunk.js.LICENSE.txt",
     "static/media/Anny.365cce24.png": "/20watts/static/media/Anny.365cce24.png",
     "static/media/Christopher.cb44875a.png": "/20watts/static/media/Christopher.cb44875a.png",
@@ -52,7 +52,7 @@
     "static/js/runtime-main.4ba545c4.js",
     "static/css/2.6bd17a26.chunk.css",
     "static/js/2.2842a6e8.chunk.js",
-    "static/css/main.ba526a7b.chunk.css",
-    "static/js/main.2cc20352.chunk.js"
+    "static/css/main.d55e5ba2.chunk.css",
+    "static/js/main.a5f9f383.chunk.js"
   ]
 }
