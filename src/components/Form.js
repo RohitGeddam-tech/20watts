@@ -81,7 +81,6 @@ const FormDesk = () => {
           console.log(err);
         });
     }
-    console.log(form);
   }, [form, validity]);
 
   return (

@@ -382,10 +382,7 @@ form {
 .formbtn {
   background-color: black !important;
   border: 1px solid black !important;
-  padding-left: 25.6px;
-  padding-right: 25.6px;
-  padding-top: 12.8px;
-  padding-bottom: 12.8px;
+  padding: 12.8px 25.6px;
   border-radius: 50px;
   width: fit-content;
   cursor: pointer;
@@ -397,7 +394,7 @@ form {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 0;
 }
 
@@ -549,8 +546,8 @@ label + .MuiInput-formControl {
   cursor: pointer;
 }
 
-@media(max-width:780px){
-  .inputslider{
+@media (max-width: 780px) {
+  .inputslider {
     width: 100%;
   }
 }
@@ -562,6 +559,7 @@ label + .MuiInput-formControl {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  padding-bottom: 2px;
   line-height: 19px;
   text-transform: uppercase;
   color: black;
@@ -586,29 +584,40 @@ label + .MuiInput-formControl {
   display: block;
   padding: 3px;
   margin: 10px 0;
-  text-align: center;
+  text-align: start;
   border: 1px solid #202020;
   white-space: nowrap;
   /* -ms-overflow-style: none; */
   /* scrollbar-width: none; */
 }
 
-.inputslide:first-child{
+.inputslide:first-child {
   margin-top: -1px !important;
 }
 
-.inputslide.after{
+.inputslide.after {
   background-color: #202020;
 }
 
-.inputslide:last-child{
+.inputslide:last-child {
   margin-bottom: -1px !important;
 }
 
 .borderslide {
-  width: 100%;
+  width: 65%;
   display: block;
+  margin-top: 20px;
+  background-color: #eeea64;
+  z-index: 200;
+  margin-bottom: 20px;
+  position: absolute;
   border: 1px solid #202020;
+}
+
+@media (max-width: 780px) {
+  .borderslide {
+    width: 95%;
+  }
 }
 
 .noneslide {
@@ -616,7 +625,7 @@ label + .MuiInput-formControl {
   padding: 0 !important;
 }
 
-.inputslide.after{
+.inputslide.after {
   background-color: #202020 !important;
   color: white;
 }
@@ -677,7 +686,7 @@ a {
   background-color: transparent !important;
   padding-top: 5px !important;
   padding-bottom: 5px !important;
-  white-space: nowrap; 
+  white-space: nowrap;
   cursor: pointer;
   font-family: "Cabin", sans-serif;
   font-style: normal;
