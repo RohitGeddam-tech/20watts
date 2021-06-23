@@ -106,8 +106,8 @@ const TestMob = () => {
                     imagegradient0={"yellow-gradient-0"}
                     imagegradient1={"yellow-gradient-1"}
                     imagename={"yellow"}
-                    title={"white"}
                   />
+                  <Title title={"white"} />
                 </NavHashLink>
               </div>
             </nav>
@@ -120,8 +120,8 @@ const TestMob = () => {
                     imagegradient0={"yellow-gradient-0"}
                     imagegradient1={"yellow-gradient-1"}
                     imagename={"yellow"}
-                    title={"black"}
                   />
+                  <Title title={"black"} />
                 </NavHashLink>
               </div>
             </nav>

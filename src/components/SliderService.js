@@ -39,8 +39,8 @@ const SliderService = ({ initialChecked, passChecked }) => {
 
   return (
     <>
-      <div className="inputslider">
-        <h1 onClick={() => setClicked(!clicked)}>select your service *</h1>
+      <div onClick={() => setClicked(!clicked)} className="inputslider">
+        <h1>select your service *</h1>
         <div className={slide}>
           {Object.keys(checkedboxes).map((each, index) => {
             return (

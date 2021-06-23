@@ -546,6 +546,13 @@ label + .MuiInput-formControl {
   flex-flow: column;
   align-items: flex-start;
   margin-top: 15px;
+  cursor: pointer;
+}
+
+@media(max-width:780px){
+  .inputslider{
+    width: 100%;
+  }
 }
 
 .inputslider h1 {
