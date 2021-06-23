@@ -562,7 +562,13 @@ label + .MuiInput-formControl {
   padding-bottom: 2px;
   line-height: 19px;
   text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
   color: black;
+}
+
+.inputslider h1 span{
+  padding-right: 5px;
 }
 
 .inputslider img:last-child {
@@ -583,9 +589,9 @@ label + .MuiInput-formControl {
   /* display: none; */
   display: block;
   padding: 3px;
-  margin: 10px 0;
+  margin: 5px 0 !important;
   text-align: start;
-  border: 1px solid #202020;
+  /* border: 1px solid #202020; */
   white-space: nowrap;
   /* -ms-overflow-style: none; */
   /* scrollbar-width: none; */
@@ -606,7 +612,7 @@ label + .MuiInput-formControl {
 .borderslide {
   width: 65%;
   display: block;
-  margin-top: 20px;
+  margin-top: 35px;
   background-color: #eeea64;
   z-index: 200;
   margin-bottom: 20px;
@@ -698,7 +704,7 @@ a {
 }
 
 .serviceslide-btn.after {
-  background-color: black !important;
+  background-color: transparent !important;
   white-space: nowrap;
   cursor: pointer;
   font-family: "Cabin", sans-serif;
@@ -706,7 +712,7 @@ a {
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
-  color: #fff;
+  color: green;
   text-transform: uppercase;
 }
 /* 

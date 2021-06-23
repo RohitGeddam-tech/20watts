@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import drop from "../img/expand_more.png";
+// import { TextField } from "@material-ui/core/ExpansionPanel";
 
 const SliderService = ({ initialChecked, passChecked }) => {
   let checkedboxes = {
@@ -40,7 +42,12 @@ const SliderService = ({ initialChecked, passChecked }) => {
   return (
     <>
       <div onClick={() => setClicked(!clicked)} className="inputslider">
-        <h1>select your service *</h1>
+        <h1>
+          select your service *{" "}
+          <span>
+            <img src={drop} alt="drop-icon" />
+          </span>
+        </h1>
         <div className={slide}>
           {Object.keys(checkedboxes).map((each, index) => {
             return (
