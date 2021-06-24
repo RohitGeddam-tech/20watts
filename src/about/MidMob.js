@@ -11,10 +11,10 @@ import savio from "../img/team/savio.png";
 import ansh from "../img/team/ansh.png";
 import anushree from "../img/team/anushree.png";
 import saloni from "../img/team/saloni.png";
-import reebu from "../img/team/Reebu.png";
-import vaze from "../img/team/Vaze.png";
-import anny from "../img/team/Anny.png";
-import chris from "../img/team/Christopher.png";
+import reebu from "../img/team/Reebu.webp";
+import vaze from "../img/team/Vaze.webp";
+import anny from "../img/team/Anny.webp";
+import chris from "../img/team/Christopher.webp";
 import post from "../img/post.png";
 
 const MidMob = () => {
