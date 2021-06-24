@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/20watts/static/css/main.8bb3c8f9.chunk.css",
-    "main.js": "/20watts/static/js/main.7ae2249d.chunk.js",
-    "main.js.map": "/20watts/static/js/main.7ae2249d.chunk.js.map",
+    "main.js": "/20watts/static/js/main.3e6f94fb.chunk.js",
+    "main.js.map": "/20watts/static/js/main.3e6f94fb.chunk.js.map",
     "runtime-main.js": "/20watts/static/js/runtime-main.4ba545c4.js",
     "runtime-main.js.map": "/20watts/static/js/runtime-main.4ba545c4.js.map",
     "static/css/2.6bd17a26.chunk.css": "/20watts/static/css/2.6bd17a26.chunk.css",
@@ -12,12 +12,12 @@
     "static/css/2.6bd17a26.chunk.css.map": "/20watts/static/css/2.6bd17a26.chunk.css.map",
     "static/css/main.8bb3c8f9.chunk.css.map": "/20watts/static/css/main.8bb3c8f9.chunk.css.map",
     "static/js/2.f55fa85e.chunk.js.LICENSE.txt": "/20watts/static/js/2.f55fa85e.chunk.js.LICENSE.txt",
-    "static/media/Anny.06dc887b.webp": "/20watts/static/media/Anny.06dc887b.webp",
-    "static/media/Christopher.6a8ea468.webp": "/20watts/static/media/Christopher.6a8ea468.webp",
+    "static/media/Anny.27a32fea.webp": "/20watts/static/media/Anny.27a32fea.webp",
+    "static/media/Christopher.126dcea2.webp": "/20watts/static/media/Christopher.126dcea2.webp",
     "static/media/Frame2.6756bbc8.png": "/20watts/static/media/Frame2.6756bbc8.png",
     "static/media/Framemob.5351d972.jpg": "/20watts/static/media/Framemob.5351d972.jpg",
-    "static/media/Reebu.f468c3f9.webp": "/20watts/static/media/Reebu.f468c3f9.webp",
-    "static/media/Vaze.ef3eed04.webp": "/20watts/static/media/Vaze.ef3eed04.webp",
+    "static/media/Reebu.62aa5763.webp": "/20watts/static/media/Reebu.62aa5763.webp",
+    "static/media/Vaze.94eb1904.webp": "/20watts/static/media/Vaze.94eb1904.webp",
     "static/media/ansh.c956b55f.png": "/20watts/static/media/ansh.c956b55f.png",
     "static/media/anushree.18534f1b.png": "/20watts/static/media/anushree.18534f1b.png",
     "static/media/bunnies.ff46d178.png": "/20watts/static/media/bunnies.ff46d178.png",
@@ -53,6 +53,6 @@
     "static/css/2.6bd17a26.chunk.css",
     "static/js/2.f55fa85e.chunk.js",
     "static/css/main.8bb3c8f9.chunk.css",
-    "static/js/main.7ae2249d.chunk.js"
+    "static/js/main.3e6f94fb.chunk.js"
   ]
 }
