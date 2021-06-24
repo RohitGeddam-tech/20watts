@@ -41,7 +41,7 @@ const SliderService = ({ initialChecked, passChecked }) => {
 
   return (
     <>
-      <div onClick={() => setClicked(!clicked)} className="inputslider">
+      <div onMouseEnter={() => setClicked(true)} onMouseLeave={() => setClicked(false)} className="inputslider">
         <h1>
           select your service *{" "}
           <span>
@@ -57,16 +57,6 @@ const SliderService = ({ initialChecked, passChecked }) => {
                 // onClick={(e) => e.target.classList.toggle("after")}
                 key={index}
               >
-                <label
-                  htmlFor={each}
-                  className="serviceslide-btn"
-                  onClick={(e) => {
-                    e.target.classList.toggle("after");
-                  }}
-                >
-                  {checkedboxes[each].value}
-                </label>
-
                 <input
                   id={each}
                   type="checkbox"
@@ -74,8 +64,17 @@ const SliderService = ({ initialChecked, passChecked }) => {
                   onChange={(e) => {
                     handleClick(e, each);
                   }}
-                  style={{ display: "none" }}
+                  style={{ marginRight:'10px' }}
                 />
+                <label
+                  htmlFor={each}
+                  className="serviceslide-btn"
+                  // onClick={(e) => {
+                  //   e.target.classList.toggle("after");
+                  // }}
+                >
+                  {checkedboxes[each].value}
+                </label>
               </div>
             );
           })}
