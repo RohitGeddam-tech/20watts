@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/20watts/static/css/main.bdc83fdb.chunk.css",
-    "main.js": "/20watts/static/js/main.d8d01ff1.chunk.js",
-    "main.js.map": "/20watts/static/js/main.d8d01ff1.chunk.js.map",
+    "main.js": "/20watts/static/js/main.1c73fca5.chunk.js",
+    "main.js.map": "/20watts/static/js/main.1c73fca5.chunk.js.map",
     "runtime-main.js": "/20watts/static/js/runtime-main.4ba545c4.js",
     "runtime-main.js.map": "/20watts/static/js/runtime-main.4ba545c4.js.map",
     "static/css/2.6bd17a26.chunk.css": "/20watts/static/css/2.6bd17a26.chunk.css",
@@ -12,12 +12,12 @@
     "static/css/2.6bd17a26.chunk.css.map": "/20watts/static/css/2.6bd17a26.chunk.css.map",
     "static/css/main.bdc83fdb.chunk.css.map": "/20watts/static/css/main.bdc83fdb.chunk.css.map",
     "static/js/2.f55fa85e.chunk.js.LICENSE.txt": "/20watts/static/js/2.f55fa85e.chunk.js.LICENSE.txt",
-    "static/media/Anny.365cce24.png": "/20watts/static/media/Anny.365cce24.png",
-    "static/media/Christopher.cb44875a.png": "/20watts/static/media/Christopher.cb44875a.png",
+    "static/media/Anny.e938d44d.webp": "/20watts/static/media/Anny.e938d44d.webp",
+    "static/media/Christopher.e666e632.webp": "/20watts/static/media/Christopher.e666e632.webp",
     "static/media/Frame2.6756bbc8.png": "/20watts/static/media/Frame2.6756bbc8.png",
     "static/media/Framemob.5351d972.jpg": "/20watts/static/media/Framemob.5351d972.jpg",
-    "static/media/Reebu.c8b42a0a.png": "/20watts/static/media/Reebu.c8b42a0a.png",
-    "static/media/Vaze.ed234ac6.png": "/20watts/static/media/Vaze.ed234ac6.png",
+    "static/media/Reebu.9773c2b5.webp": "/20watts/static/media/Reebu.9773c2b5.webp",
+    "static/media/Vaze.93ff9376.webp": "/20watts/static/media/Vaze.93ff9376.webp",
     "static/media/ansh.c956b55f.png": "/20watts/static/media/ansh.c956b55f.png",
     "static/media/anushree.18534f1b.png": "/20watts/static/media/anushree.18534f1b.png",
     "static/media/bunnies.ff46d178.png": "/20watts/static/media/bunnies.ff46d178.png",
@@ -53,6 +53,6 @@
     "static/css/2.6bd17a26.chunk.css",
     "static/js/2.f55fa85e.chunk.js",
     "static/css/main.bdc83fdb.chunk.css",
-    "static/js/main.d8d01ff1.chunk.js"
+    "static/js/main.1c73fca5.chunk.js"
   ]
 }
