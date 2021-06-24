@@ -71,19 +71,19 @@ const FormDesk = () => {
     }
   };
 
-  // useEffect(() => {
-  //   if (validity) {
-  //     axios
-  //       .post("https://mailserver.alokshenoy.com/form-submit/", form)
-  //       .then((res) => {
-  //         setFormEmpty(false);
-  //         setSuccess(true);
-  //       })
-  //       .catch((err) => {
-  //         console.log(err);
-  //       });
-  //   }
-  // }, [form, validity]);
+  useEffect(() => {
+    if (validity) {
+      axios
+        .post("https://mailserver.alokshenoy.com/form-submit/", form)
+        .then((res) => {
+          setFormEmpty(false);
+          setSuccess(true);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }, [form, validity]);
 
   return (
     <>
@@ -219,19 +219,19 @@ const FormMob = () => {
     }
   };
 
-  // useEffect(() => {
-  //   if (validity) {
-  //     axios
-  //       .post("https://mailserver.alokshenoy.com/form-submit/", form)
-  //       .then((res) => {
-  //         setFormEmpty(false);
-  //         setSuccess(true);
-  //       })
-  //       .catch((err) => {
-  //         console.log(err);
-  //       });
-  //   }
-  // }, [form, validity]);
+  useEffect(() => {
+    if (validity) {
+      axios
+        .post("https://mailserver.alokshenoy.com/form-submit/", form)
+        .then((res) => {
+          setFormEmpty(false);
+          setSuccess(true);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }, [form, validity]);
 
   return (
     <>
