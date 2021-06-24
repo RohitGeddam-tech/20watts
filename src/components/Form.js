@@ -53,6 +53,8 @@ const FormDesk = () => {
       setFormEmpty(false);
     }
 
+    console.log(form)
+
     // if (!(nameInvalid || phoneNoInvalid || emailIdInvalid || serviceInvalid || service === ''))
 
     if (!(nameInvalid || phoneNoInvalid || emailIdInvalid)) {

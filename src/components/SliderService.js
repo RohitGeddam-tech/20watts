@@ -29,6 +29,7 @@ const SliderService = ({ initialChecked, passChecked }) => {
       ? initialChecked.push(val)
       : removeItemOnce(initialChecked, val);
     setChecked(initialChecked);
+    console.log(isChecked);
   };
 
   useEffect(() => {
@@ -41,9 +42,22 @@ const SliderService = ({ initialChecked, passChecked }) => {
 
   return (
     <>
-      <div onMouseEnter={() => setClicked(true)} onMouseLeave={() => setClicked(false)} className="inputslider">
+      <div
+        onMouseEnter={() => setClicked(true)}
+        onMouseLeave={() => setClicked(false)}
+        className="inputslider"
+      >
+        {isChecked.length === 0 ? null : <p>select your service *</p>}
         <h1>
-          select your service *{" "}
+          {/* select your service *{" "} */}
+          {isChecked.length === 0 ? (
+            <>select your service * </>
+          ) : (
+            <>
+              {isChecked.join(", ").toString().slice(0, 30)}
+              {isChecked.join(", ").toString().length > 30 ? <>...</> : null}
+            </>
+          )}
           <span>
             <img src={drop} alt="drop-icon" />
           </span>
@@ -64,7 +78,7 @@ const SliderService = ({ initialChecked, passChecked }) => {
                   onChange={(e) => {
                     handleClick(e, each);
                   }}
-                  style={{ marginRight:'10px' }}
+                  style={{ marginRight: "10px" }}
                 />
                 <label
                   htmlFor={each}

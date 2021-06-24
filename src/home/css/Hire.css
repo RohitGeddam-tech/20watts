@@ -552,6 +552,15 @@ label + .MuiInput-formControl {
   }
 }
 
+.inputslider p{
+  font-family: "Cabin", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px !important;
+  text-transform: uppercase;
+}
+
 .inputslider h1 {
   width: 100%;
   border-bottom: 1px solid #000;
