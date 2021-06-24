@@ -614,7 +614,8 @@ input[type='checkbox']{
   -webkit-appearance: none;
   height: 20px;
   width: 20px;
-  background-color: #d5d5d5;
+  background-color: transparent;
+  border: 1px solid white;
   border-radius: 50px;
   cursor: pointer;
   display: flex;
@@ -633,12 +634,13 @@ input[type='checkbox']:after{
 }
 
 input[type='checkbox']:hover{
-  background-color: #a5a5a5;
+  background-color: transparent;
 }
 
 input[type='checkbox']:checked{
   background-color: black;
   color: #fff;
+  border: 1px solid black !important;
 }
 
 input[type='checkbox']:checked:after{
