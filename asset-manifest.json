@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/20watts/static/css/main.e92e4029.chunk.css",
+    "main.css": "/20watts/static/css/main.dcb8a4aa.chunk.css",
     "main.js": "/20watts/static/js/main.7e7ee449.chunk.js",
     "main.js.map": "/20watts/static/js/main.7e7ee449.chunk.js.map",
     "runtime-main.js": "/20watts/static/js/runtime-main.4ba545c4.js",
@@ -10,7 +10,7 @@
     "static/js/2.cc277753.chunk.js.map": "/20watts/static/js/2.cc277753.chunk.js.map",
     "index.html": "/20watts/index.html",
     "static/css/2.6bd17a26.chunk.css.map": "/20watts/static/css/2.6bd17a26.chunk.css.map",
-    "static/css/main.e92e4029.chunk.css.map": "/20watts/static/css/main.e92e4029.chunk.css.map",
+    "static/css/main.dcb8a4aa.chunk.css.map": "/20watts/static/css/main.dcb8a4aa.chunk.css.map",
     "static/js/2.cc277753.chunk.js.LICENSE.txt": "/20watts/static/js/2.cc277753.chunk.js.LICENSE.txt",
     "static/media/Anny.06dc887b.webp": "/20watts/static/media/Anny.06dc887b.webp",
     "static/media/Christopher.6a8ea468.webp": "/20watts/static/media/Christopher.6a8ea468.webp",
@@ -52,7 +52,7 @@
     "static/js/runtime-main.4ba545c4.js",
     "static/css/2.6bd17a26.chunk.css",
     "static/js/2.cc277753.chunk.js",
-    "static/css/main.e92e4029.chunk.css",
+    "static/css/main.dcb8a4aa.chunk.css",
     "static/js/main.7e7ee449.chunk.js"
   ]
 }
