@@ -638,9 +638,9 @@ input[type='checkbox']:hover{
 }
 
 input[type='checkbox']:checked{
-  background-color: black;
-  color: #fff;
-  border: 1px solid black !important;
+  background-color: white;
+  color: black;
+  /* border: 1px solid black !important; */
 }
 
 input[type='checkbox']:checked:after{
@@ -648,7 +648,7 @@ input[type='checkbox']:checked:after{
   font-family: "Font Awesome 5 free";
   content: "\f00c";
   font-size: 12px;
-  color: white !important;
+  color: black !important;
   font-weight: bold;
 }
 
