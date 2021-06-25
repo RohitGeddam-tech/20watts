@@ -153,6 +153,7 @@ button {
   text-transform: uppercase;
   color: rgb(135, 135, 135);
   margin-bottom: 5px;
+  white-space: nowrap;
 }
 
 .mobbtn:hover {
