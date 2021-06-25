@@ -53,7 +53,7 @@ const FormDesk = () => {
       setFormEmpty(false);
     }
 
-    console.log(form)
+    console.log(form);
 
     // if (!(nameInvalid || phoneNoInvalid || emailIdInvalid || serviceInvalid || service === ''))
 
@@ -89,7 +89,10 @@ const FormDesk = () => {
     <>
       <form onSubmit={handleSubmit}>
         {/* <Serv initialChecked={isChecked} passChecked={setChecked} /> */}
-        <SliderService initialChecked={isChecked} passChecked={setChecked} />
+        <SliderService
+          initialChecked={isChecked}
+          passChecked={setChecked}
+        />
         {/* <select
           name="service"
           onChange={handleChange}

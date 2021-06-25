@@ -1,6 +1,29 @@
 import React, { useEffect, useState } from "react";
+import { useRef } from "react";
 import drop from "../img/expand_more.png";
+import DivShow from "./DivShow";
+// import HireDesk from "./HireDesk";
+// import HireMob from "./HireMob";
+// import Form from './Form'
 // import { TextField } from "@material-ui/core/ExpansionPanel";
+
+// const [clicked, setClicked] = useState(false);
+
+function useOutsideAlerter(ref, click) {
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (ref.current && !ref.current.contains(event.target)) {
+        // setClicked(false);
+        click(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [ref]);
+}
 
 const SliderService = ({ initialChecked, passChecked }) => {
   let checkedboxes = {
@@ -37,16 +60,21 @@ const SliderService = ({ initialChecked, passChecked }) => {
   }, [isChecked, passChecked]);
 
   const [clicked, setClicked] = useState(false);
+  const slide =
+    isChecked.length === 0
+      ? clicked
+        ? "borderslide"
+        : "noneslide"
+      : clicked
+      ? "borderslideTop"
+      : "noneslide";
 
-  const slide = clicked ? "borderslide" : "noneslide";
+  const wrapperRef = useRef(null);
+  useOutsideAlerter(wrapperRef, setClicked);
 
   return (
     <>
-      <div
-        onMouseEnter={() => setClicked(true)}
-        onMouseLeave={() => setClicked(false)}
-        className="inputslider"
-      >
+      <div className="inputslider" onClick={()=>setClicked(!clicked)}>
         {isChecked.length === 0 ? null : <p>select your service *</p>}
         <h1>
           {/* select your service *{" "} */}
@@ -62,12 +90,12 @@ const SliderService = ({ initialChecked, passChecked }) => {
             <img src={drop} alt="drop-icon" />
           </span>
         </h1>
-        <div className={slide}>
+        <div className={slide} ref={wrapperRef}>
           {Object.keys(checkedboxes).map((each, index) => {
             return (
               <div
                 className="inputslide"
-                // htmlFor={each}
+                htmlFor={each}
                 // onClick={(e) => e.target.classList.toggle("after")}
                 key={index}
               >
@@ -94,6 +122,10 @@ const SliderService = ({ initialChecked, passChecked }) => {
           })}
         </div>
       </div>
+      {/* <div style={{display:'none'}}>
+      <HireMob />
+      <HireDesk />
+      </div> */}
     </>
   );
 };
