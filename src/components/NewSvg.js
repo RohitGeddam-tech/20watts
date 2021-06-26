@@ -24,32 +24,32 @@ const NewSvg = ({
         className={className}
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M33.4506 36.2352L26.0623 36.1709L22.8958 31.4015L19.7294 36.1709L12.341 36.2352L22.8379 20.7058L33.4506 36.2352Z"
         fill="#EEEA64"
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M22.7334 20.7058V31.4882L19.6607 36.1708L12.341 36.2352L22.7334 20.7058Z"
         className={imagegradient0}
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M22.7334 20.7058V31.4999L26.003 36.1709L33.4506 36.2352L22.7334 20.7058Z"
         className={imagegradient1}
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M25.981 36.1712L34.3001 36.2353L38.9716 22L25.981 36.1712Z"
         className={imagename}
       />
       <path
-        fill-rule="evenodd"
-        clip-rule="evenodd"
+        fillRule="evenodd"
+        clipRule="evenodd"
         d="M19.4858 36.1712L11.1667 36.2353L6.49525 22L19.4858 36.1712Z"
         className={imagename}
       />
@@ -63,9 +63,9 @@ const NewSvg = ({
           y2="36.1524"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#EAEB6D" />
-          <stop offset="0.577386" stop-color="#CFC24E" />
-          <stop offset="1" stop-color="#885800" />
+          <stop stopColor="#EAEB6D" />
+          <stop offset="0.577386" stopColor="#CFC24E" />
+          <stop offset="1" stopColor="#885800" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -75,9 +75,9 @@ const NewSvg = ({
           y2="36.3132"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#EAEB6D" />
-          <stop offset="0.577386" stop-color="#CFC24E" />
-          <stop offset="1" stop-color="#885800" />
+          <stop stopColor="#EAEB6D" />
+          <stop offset="0.577386" stopColor="#CFC24E" />
+          <stop offset="1" stopColor="#885800" />
         </linearGradient>
       </defs>
     </svg>

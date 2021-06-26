@@ -59,7 +59,7 @@ const SliderService = ({ initialChecked, passChecked }) => {
       ? initialChecked.push(val)
       : removeItemOnce(initialChecked, val);
     setChecked(initialChecked);
-    console.log(isChecked);
+    // console.log(isChecked);
   };
 
   useEffect(() => {

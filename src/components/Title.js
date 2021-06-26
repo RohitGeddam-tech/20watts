@@ -23,9 +23,9 @@ const TitleSvg = ({ title }) => {
           y2="36.1524"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#EAEB6D" />
-          <stop offset="0.577386" stop-color="#CFC24E" />
-          <stop offset="1" stop-color="#885800" />
+          <stop stopColor="#EAEB6D" />
+          <stop offset="0.577386" stopColor="#CFC24E" />
+          <stop offset="1" stopColor="#885800" />
         </linearGradient>
         <linearGradient
           id="paint1_linear"
@@ -35,9 +35,9 @@ const TitleSvg = ({ title }) => {
           y2="36.3132"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#EAEB6D" />
-          <stop offset="0.577386" stop-color="#CFC24E" />
-          <stop offset="1" stop-color="#885800" />
+          <stop stopColor="#EAEB6D" />
+          <stop offset="0.577386" stopColor="#CFC24E" />
+          <stop offset="1" stopColor="#885800" />
         </linearGradient>
       </defs>
     </svg>

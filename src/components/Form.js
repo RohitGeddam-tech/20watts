@@ -3,7 +3,7 @@ import TextField from "@material-ui/core/TextField";
 import axios from "axios";
 import InputAdornment from "@material-ui/core/InputAdornment";
 import SliderService from "./SliderService";
-import Serv from "./ServiceSlider";
+// import Serv from "./ServiceSlider";
 
 const FormDesk = () => {
   const [isChecked, setChecked] = useState([]);
@@ -53,10 +53,6 @@ const FormDesk = () => {
       setFormEmpty(false);
     }
 
-    console.log(form);
-
-    // if (!(nameInvalid || phoneNoInvalid || emailIdInvalid || serviceInvalid || service === ''))
-
     if (!(nameInvalid || phoneNoInvalid || emailIdInvalid)) {
       setValidity(true);
       setForm({
@@ -88,21 +84,10 @@ const FormDesk = () => {
   return (
     <>
       <form onSubmit={handleSubmit}>
-        {/* <Serv initialChecked={isChecked} passChecked={setChecked} /> */}
         <SliderService
           initialChecked={isChecked}
           passChecked={setChecked}
         />
-        {/* <select
-          name="service"
-          onChange={handleChange}
-          // onChange={e=>console.log(e.target.value)}
-        >
-          <option value="red">red</option>
-          <option value="green">green</option>
-          <option value="yellow">yellow</option>
-        </select>
-        {serviceInvalid ? <h1>Please provide a valid name</h1> : ""} */}
         <TextField
           className="textfield"
           label="Name"
