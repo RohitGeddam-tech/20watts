@@ -1,28 +1,35 @@
 import React, { useEffect, useState } from "react";
 import { useRef } from "react";
 import drop from "../img/expand_more.png";
-import DivShow from "./DivShow";
-// import HireDesk from "./HireDesk";
-// import HireMob from "./HireMob";
-// import Form from './Form'
-// import { TextField } from "@material-ui/core/ExpansionPanel";
 
-// const [clicked, setClicked] = useState(false);
+function useComponentVisible(initialIsVisible) {
+  const [isComponentVisible, setIsComponentVisible] = useState(
+    initialIsVisible
+  );
+  const ref = useRef(null);
 
-function useOutsideAlerter(ref, click) {
-  useEffect(() => {
-    function handleClickOutside(event) {
-      if (ref.current && !ref.current.contains(event.target)) {
-        // setClicked(false);
-        click(false)
-      }
+  const handleHideDropdown = (event) => {
+    if (event.key === "Escape") {
+      setIsComponentVisible(false);
     }
+  };
 
-    document.addEventListener("mousedown", handleClickOutside);
+  const handleClickOutside = event => {
+    if (ref.current && !ref.current.contains(event.target)) {
+      setIsComponentVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("keydown", handleHideDropdown, true);
+    document.addEventListener("click", handleClickOutside, true);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleHideDropdown, true);
+      document.removeEventListener("click", handleClickOutside, true);
     };
-  }, [ref]);
+  });
+
+  return { ref, isComponentVisible, setIsComponentVisible };
 }
 
 const SliderService = ({ initialChecked, passChecked }) => {
@@ -59,25 +66,32 @@ const SliderService = ({ initialChecked, passChecked }) => {
     passChecked(isChecked);
   }, [isChecked, passChecked]);
 
-  const [clicked, setClicked] = useState(false);
+
+  const {
+    ref,
+    isComponentVisible,
+    setIsComponentVisible
+  } = useComponentVisible(false);
+
+
   const slide =
     isChecked.length === 0
-      ? clicked
+      ? isComponentVisible
         ? "borderslide"
         : "noneslide"
-      : clicked
+      : isComponentVisible
       ? "borderslideTop"
       : "noneslide";
 
-  const wrapperRef = useRef(null);
-  useOutsideAlerter(wrapperRef, setClicked);
-
   return (
     <>
-      <div className="inputslider" onClick={()=>setClicked(!clicked)}>
+      <div
+        className="inputslider"
+        ref={ref}
+        onClick={() => setIsComponentVisible(!isComponentVisible)}
+      >
         {isChecked.length === 0 ? null : <p>select your service *</p>}
         <h1>
-          {/* select your service *{" "} */}
           {isChecked.length === 0 ? (
             <>select your service * </>
           ) : (
@@ -90,13 +104,12 @@ const SliderService = ({ initialChecked, passChecked }) => {
             <img src={drop} alt="drop-icon" />
           </span>
         </h1>
-        <div className={slide} ref={wrapperRef}>
+        <div className={slide}>
           {Object.keys(checkedboxes).map((each, index) => {
             return (
               <div
                 className="inputslide"
                 htmlFor={each}
-                // onClick={(e) => e.target.classList.toggle("after")}
                 key={index}
               >
                 <input
@@ -111,9 +124,6 @@ const SliderService = ({ initialChecked, passChecked }) => {
                 <label
                   htmlFor={each}
                   className="serviceslide-btn"
-                  // onClick={(e) => {
-                  //   e.target.classList.toggle("after");
-                  // }}
                 >
                   {checkedboxes[each].value}
                 </label>
@@ -122,10 +132,6 @@ const SliderService = ({ initialChecked, passChecked }) => {
           })}
         </div>
       </div>
-      {/* <div style={{display:'none'}}>
-      <HireMob />
-      <HireDesk />
-      </div> */}
     </>
   );
 };
