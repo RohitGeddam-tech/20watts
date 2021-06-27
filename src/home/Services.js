@@ -1,10 +1,10 @@
 import React, { useEffect, useState, useRef, useCallback } from "react";
 import "./css/Services.css";
-import strategy from "../img/strat.webp";
-import creative from "../img/create.webp";
-import media from "../img/soc.webp";
-import post from "../img/post.webp";
-import production from "../img/prod.webp";
+import strategy from "../img/strat.png";
+import creative from "../img/creat.png";
+import media from "../img/soc.png";
+import post from "../img/post.png";
+import production from "../img/prod.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
