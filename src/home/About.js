@@ -4,7 +4,7 @@ import "./css/about.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import desk from "../img/Frame2.png";
-import mob from "../img/Framemob.jpg";
+import mob from "../img/Framemob.webp";
 import { Fade } from "react-animation-components";
 // import MobSlider from "../components/MobSliding";
 import { NavHashLink } from "react-router-hash-link";
