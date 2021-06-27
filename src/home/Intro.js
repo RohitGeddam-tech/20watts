@@ -37,7 +37,7 @@ const DeskIntro = ({ colorText }) => {
     <div className="container">
       <div className="home">
         <div ref={colorRef} className="image" data-aos="fade-up" data-aos-duration="1000">
-          {inView ? <img src={light} alt="light" /> : <img src={logo} alt="light" />}
+          {inView ? <img loading='lazy' src={light} alt="light" /> : <img loading='lazy' src={logo} alt="light" />}
         </div>
         <div className="content" data-aos="fade-up" data-aos-duration="2000">
           <p className="para">There is no app for creative solutions. Thank god there is 20 Watts.</p>
@@ -82,11 +82,11 @@ const MobIntro = () => {
         <div className="mobileimage" data-aos="fade-up" data-aos-duration="1000">
           {inView ? (
             <div style={{ minHeight: "100vh !important", width: "100%" }}>
-              <img src={light} alt="light" />
+              <img loading='lazy' src={light} alt="light" />
             </div>
           ) : (
             <div style={{ minHeight: "100vh !important", width: "100%" }}>
-              <img src={logo} alt="light" />
+              <img loading='lazy' src={logo} alt="light" />
             </div>
           )}
         </div>
