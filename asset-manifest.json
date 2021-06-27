@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/20watts/static/css/main.ff4c0f41.chunk.css",
-    "main.js": "/20watts/static/js/main.88bf92e7.chunk.js",
-    "main.js.map": "/20watts/static/js/main.88bf92e7.chunk.js.map",
+    "main.js": "/20watts/static/js/main.c61b55bf.chunk.js",
+    "main.js.map": "/20watts/static/js/main.c61b55bf.chunk.js.map",
     "runtime-main.js": "/20watts/static/js/runtime-main.4ba545c4.js",
     "runtime-main.js.map": "/20watts/static/js/runtime-main.4ba545c4.js.map",
     "static/css/2.7fc9bc2b.chunk.css": "/20watts/static/css/2.7fc9bc2b.chunk.css",
@@ -53,6 +53,6 @@
     "static/css/2.7fc9bc2b.chunk.css",
     "static/js/2.b9425933.chunk.js",
     "static/css/main.ff4c0f41.chunk.css",
-    "static/js/main.88bf92e7.chunk.js"
+    "static/js/main.c61b55bf.chunk.js"
   ]
 }
