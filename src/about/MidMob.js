@@ -113,13 +113,13 @@ const MidMob = () => {
           <div className="mobfirst">
             <img
               src={vaze}
-              alt="vaze"
+              alt="Aaditya"
               data-aos="fade-up"
               loading="lazy"
               data-aos-duration="1000"
             />
             <div data-aos="fade-up" data-aos-duration="2000">
-              <h4>Aditya</h4>
+              <h4>Aaditya</h4>
               <p>
                 Growing up, V wanted to be an intergalactic charades champion.
                 But once he found out that Intergalactic council doesn’t take

@@ -364,7 +364,7 @@ const MidDesktop = () => {
               <div className={vazebox} onMouseEnter={onVazeClick}>
                 <img loading="lazy" src={vaze} alt="logo" />
                 <h4 className="flexbox-title">
-                  Aditya <img loading="lazy" src={icon} alt="logo" />
+                  Aaditya <img loading="lazy" src={icon} alt="logo" />
                 </h4>
               </div>
               <Fade className={innervaze} in={vaze} delay="500" duration="1000">
@@ -389,7 +389,7 @@ const MidDesktop = () => {
                     those chats instead of working and WE ARE NOT OK WITH IT!
                   </p>
                   <h4 className="flexinbox-title">
-                    Aditya <img loading="lazy" src={icona} alt="logo" />
+                    Aaditya <img loading="lazy" src={icona} alt="logo" />
                   </h4>
                 </div>
               </Fade>
@@ -486,7 +486,7 @@ const MidDesktop = () => {
                     full-time copy and scriptwriter. In her free time, you will
                     find her head buried in a book, planning her next solo trip,
                     or sifting through online sales and adding items to her
-                    Amazon cart. <br />
+                    Amazon cart. <br /> <br />
                     More about her: <br />
                     - She is the best-sellingauthor of final.docx, finalfinal.docx, fullandfinal.docx <br />
                     - A part-time stationery hoarder <br />
