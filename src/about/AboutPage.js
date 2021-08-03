@@ -61,7 +61,7 @@ const ViewMob = () => {
 
   const isInView = () => {
     const rect = window.pageYOffset;
-    return rect >= 120 && rect <= 7550;
+    return rect >= 120 && rect <= 8750;
   };
 
   const [inView, setInView] = useState(false);

@@ -120,7 +120,7 @@ const FormDesk = () => {
 
         <TextField
           className="textfield"
-          label="Email-Address"
+          label="E-MAIL ADDRESS"
           name="emailID"
           value={emailID}
           type="email"
@@ -131,13 +131,13 @@ const FormDesk = () => {
           required
         />
 
-        {emailIdInvalid ? <h1>Please provide a valid emailID</h1> : ""}
+        {emailIdInvalid ? <h1>Please provide a valid email-ID</h1> : ""}
 
         <button type="submit" className="formbtn" onClick={handleSubmit}>
           get a call back
         </button>
         {formEmpty ? (
-          <h1 style={{ paddingTop: "1em" }}>Please fill in the form</h1>
+          <h1 style={{ paddingTop: "1em", color:"#f7008c" }}>Please fill in the form</h1>
         ) : (
           ""
         )}
@@ -257,7 +257,7 @@ const FormMob = () => {
 
         <TextField
           className="textfieldmob"
-          label="Email-Address"
+          label="E-MAIL ADDRESS"
           name="emailID"
           type="email"
           value={emailID}
@@ -268,13 +268,13 @@ const FormMob = () => {
           required
         />
 
-        {emailIdInvalid ? <h1>Please provide a valid emailID</h1> : ""}
+        {emailIdInvalid ? <h1>PLEASE PROVIDE A VALID EMAIL-ID</h1> : ""}
 
         <button type="submit" className="formbtn" onClick={handleSubmit}>
           get a call back
         </button>
         {formEmpty ? (
-          <h1 style={{ paddingTop: "1em" }}>Please fill in the form</h1>
+          <h1 style={{ paddingTop: "1em", color:"#f7008c" }}>Please fill in the form</h1>
         ) : (
           ""
         )}
